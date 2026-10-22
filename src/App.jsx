@@ -167,7 +167,8 @@ export default function App() {
     <a className="skip-link" href="#main-content">본문으로 이동</a>
     <aside className="sidebar"><div className="brand"><span className="brand-mark">N</span>CommuteNet</div><p className="aside-sub">네트워크관리사 2급 · 실기 케이블링</p>
       <nav aria-label="주 메뉴">{NAV.map(([id, label]) => <button key={id} className={`nav-button ${view === id ? 'active' : ''}`} aria-current={view === id ? 'page' : undefined} onClick={() => navigate(id)}><Icon name={id} /><span>{label}</span>{id === 'wrong' && summary.wrongIds.length > 0 && <small>{summary.wrongIds.length}</small>}</button>)}</nav>
-      <div className="sidebar-note"><strong>필기와 실기를 함께</strong><p>표준 배열 학습부터 제작 연습까지</p><a href="https://sumilee-phd.github.io/NA2-com/" target="_blank" rel="noreferrer">필기 앱 열기 <span aria-hidden="true">→</span></a></div>
+      <a className="series-link" href="https://sumilee-phd.github.io/NA2-com/" target="_blank" rel="noopener noreferrer" title="새 탭에서 열기"><span>필기 문제은행 바로가기</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4 10 14M10 4H4v16h16v-6" /></svg></a>
+      <div className="sidebar-note"><strong>필기와 실기를 함께</strong><p>표준 배열 학습부터 제작 연습까지</p></div>
     </aside>
     <main className="main-content" id="main-content">
       <header className="page-header"><div><span className="eyebrow">NETWORK CABLING</span><h1>{TITLES[view]}</h1></div><span className="streak-pill">학습일 {summary.studyDays}일</span></header>
