@@ -1,0 +1,10 @@
+{
+  "name": "케이블링 트레이너",
+  "short_name": "케이블링",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#eef4ff",
+  "theme_color": "#2f80ed",
+  "lang": "ko-KR",
+  "description": "네트워크관리사 실기 대비 T568A/B 케이블링 반복 훈련 앱"
+}
