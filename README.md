@@ -4,12 +4,13 @@ CommuteNet 필기 앱과 같은 디자인을 사용하는 React 학습 앱입니
 
 ## 현재 상태
 
-2026-10-22 로컬 React 전환과 검증을 완료했습니다. 이번 작업에서는 공개 배포를 실행하지 않았습니다. 기존 공개 주소는 [NA2-cabling](https://sumilee-phd.github.io/NA2-cabling/), 필기 앱은 [NA2-com](https://sumilee-phd.github.io/NA2-com/)입니다.
+2026-10-22 React 전환과 공개 배포를 완료했습니다. [NA2-cabling 앱 열기](https://sumilee-phd.github.io/NA2-cabling/)에서 사용할 수 있습니다. 공개 사이트에서 채점·통계·새로고침 후 기록 유지를 다시 확인했습니다. 필기 앱은 [NA2-com](https://sumilee-phd.github.io/NA2-com/)입니다.
 
 - [PRD](docs/PRD.md): 목표·기능·수용 기준
 - [내용 검수 기록](docs/CONTENT_REVIEW.md): 핀 배열·적용 조건·원문 출처
 - [디자인 기준](DESIGN.md): 필기 앱과 공유하는 색상·배치
 - [검증 결과](docs/VERIFICATION.md): 자동 검사와 브라우저 확인, 미검증 범위
+- [공개 배포 검증](docs/DEPLOYMENT.md): 배포 작업·공개 자산·채점 및 기록 유지 증거
 
 ## 로컬 실행
 
@@ -65,4 +66,4 @@ legacy/423c729/      이전 앱 보존본
 
 `.github/workflows/verify.yml`은 테스트와 빌드만 수행합니다. `.github/workflows/deploy-pages.yml`은 수동 실행 전용이며 자동 공개하지 않습니다.
 
-배포 승인 후 소스를 GitHub에 반영하고 저장소 Pages의 Source를 GitHub Actions로 설정한 다음 `Deploy React to GitHub Pages`를 실행합니다. 완료 후 공개 주소에서 하위 경로·풀이·저장·화면을 다시 확인해야 합니다. 이번 로컬 검증은 GitHub Actions 또는 공개 배포 성공의 증거가 아닙니다.
+현재 Pages의 Source는 GitHub Actions입니다. 이후 업데이트는 승인한 소스를 GitHub에 반영한 다음 `Deploy React to GitHub Pages`를 수동 실행합니다. 완료 후 공개 주소에서 하위 경로·풀이·저장·화면을 다시 확인합니다. 2026-10-22 공개 배포 및 검증 결과는 [배포 기록](docs/DEPLOYMENT.md)에 따로 정리했습니다.
