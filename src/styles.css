@@ -19,7 +19,7 @@ p { margin-bottom: 8px; word-break: keep-all; overflow-wrap: anywhere; }
 small { color: var(--muted); }
 .shell { display: grid; grid-template-columns: 238px minmax(0, 1fr); max-width: 1540px; min-height: 100vh; margin: 0 auto; }
 .sidebar { position: sticky; top: 0; display: flex; height: 100vh; flex-direction: column; padding: 28px 19px 22px; color: #f4fff9; background: linear-gradient(155deg, #123b37, #102c33 74%); }
-.brand { display: flex; align-items: center; gap: 10px; font-size: 21px; font-weight: 800; }
+.brand { display: flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 800; white-space: nowrap; }
 .brand-mark { display: grid; width: 34px; height: 34px; place-items: center; color: #123b37; background: #89dfb5; border-radius: 6px; }
 .aside-sub { margin: 8px 0 31px; color: #afc9c1; font-size: 12px; }
 .sidebar nav { display: grid; gap: 5px; }

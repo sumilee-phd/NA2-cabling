@@ -165,7 +165,7 @@ export default function App() {
 
   return <div className={`shell ${state.settings.motion ? '' : 'reduced-motion'}`}>
     <a className="skip-link" href="#main-content">본문으로 이동</a>
-    <aside className="sidebar"><div className="brand"><span className="brand-mark">N</span>CommuteNet</div><p className="aside-sub">네트워크관리사 2급 · 실기 케이블링</p>
+    <aside className="sidebar"><div className="brand"><span className="brand-mark">N</span>케이블링 트레이너</div><p className="aside-sub">네트워크관리사 2급 · 실기 케이블링</p>
       <nav aria-label="주 메뉴">{NAV.map(([id, label]) => <button key={id} className={`nav-button ${view === id ? 'active' : ''}`} aria-current={view === id ? 'page' : undefined} onClick={() => navigate(id)}><Icon name={id} /><span>{label}</span>{id === 'wrong' && summary.wrongIds.length > 0 && <small>{summary.wrongIds.length}</small>}</button>)}</nav>
       <div className="sidebar-note"><strong>필기와 실기를 함께</strong><p>표준 배열 학습부터 제작 연습까지</p></div>
     </aside>
